@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="description" content="Explore rental properties on RentEase">
+    <title>Explore Rentals | RentEase</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="../index.html" class="logo"><span class="logo-icon">🏠</span><span>Rent<span
+                        class="text-gradient">Ease</span></span></a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="explore.html" class="nav-link active">Explore</a></li>
+                <li><a href="categories.html" class="nav-link">Categories</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                    </svg>
+                </button>
+                <a href="#" onclick="WhatsApp.general(); return false;" class="btn btn-whatsapp btn-sm">💬 WhatsApp</a>
+                <button class="mobile-menu-btn" aria-label="Menu"><span></span><span></span><span></span></button>
+            </div>
+        </nav>
+    </header>
+
+    <nav class="mobile-nav">
+        <a href="../index.html" class="nav-link">🏠 Home</a>
+        <a href="explore.html" class="nav-link active">🔍 Explore</a>
+        <a href="categories.html" class="nav-link">📂 Categories</a>
+        <a href="about.html" class="nav-link">ℹ️ About</a>
+        <a href="contact.html" class="nav-link">📞 Contact</a>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <nav class="breadcrumb"><a href="../index.html">Home</a> / <span>Explore</span></nav>
+            <h1>Find Your <span class="text-gradient">Rental</span></h1>
+            <p>Fill the filters and search - We'll respond via WhatsApp!</p>
+        </div>
+    </section>
+
+    <!-- Filters - All Actions End with WhatsApp -->
+    <section class="section" style="padding-top: var(--space-6);">
+        <div class="container">
+            <form class="filters-bar filters-form">
+                <div class="filters-grid">
+                    <div class="filter-group">
+                        <label class="filter-label">📍 Location / City</label>
+                        <input type="text" class="filter-input" name="location" placeholder="e.g., Bangalore, Delhi">
+                    </div>
+                    <div class="filter-group">
+                        <label class="filter-label">🏷️ Category</label>
+                        <select class="filter-select" name="category">
+                            <option value="all">All Categories</option>
+                            <option value="houses">Houses & Flats</option>
+                            <option value="pg">PG & Hostels</option>
+                            <option value="coworking">Co-working Spaces</option>
+                            <option value="library">Library Seats</option>
+                            <option value="commercial">Commercial</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label class="filter-label">💰 Min Budget (₹)</label>
+                        <input type="number" class="filter-input" name="minPrice" placeholder="e.g., 5000">
+                    </div>
+                    <div class="filter-group">
+                        <label class="filter-label">💰 Max Budget (₹)</label>
+                        <input type="number" class="filter-input" name="maxPrice" placeholder="e.g., 25000">
+                    </div>
+                    <button type="submit" class="btn btn-whatsapp btn-lg">🔍 Search via WhatsApp</button>
+                </div>
+            </form>
+
+            <div class="text-center" style="margin-top: var(--space-8);">
+                <p style="color: var(--text-secondary); margin-bottom: var(--space-4);">👆 Fill the form and click
+                    search - We'll share matching properties on WhatsApp!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick City Search -->
+    <section class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Quick Search</span>
+                <h2 class="section-title">Popular <span class="text-gradient">Cities</span></h2>
+                <p class="section-desc">Tap any city to search via WhatsApp</p>
+            </div>
+
+            <div class="grid grid-4">
+                <button class="card location-btn" style="padding: var(--space-5); text-align: center;"
+                    data-location="Bangalore">🏙️ Bangalore</button>
+                <button class="card location-btn" style="padding: var(--space-5); text-align: center;"
+                    data-location="Delhi NCR">🏛️ Delhi NCR</button>
+                <button class="card location-btn" style="padding: var(--space-5); text-align: center;"
+                    data-location="Mumbai">🌆 Mumbai</button>
+                <button class="card location-btn" style="padding: var(--space-5); text-align: center;"
+                    data-location="Hyderabad">🏰 Hyderabad</button>
+                <button class="card location-btn" style="padding: var(--space-5); text-align: center;"
+                    data-location="Pune">⛰️ Pune</button>
+                <button class="card location-btn" style="padding: var(--space-5); text-align: center;"
+                    data-location="Chennai">🏖️ Chennai</button>
+                <button class="card location-btn" style="padding: var(--space-5); text-align: center;"
+                    data-location="Noida">🏗️ Noida</button>
+                <button class="card location-btn" style="padding: var(--space-5); text-align: center;"
+                    data-location="Gurgaon">🌃 Gurgaon</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Category Search -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Categories</span>
+                <h2 class="section-title">Browse by <span class="text-gradient">Type</span></h2>
+            </div>
+
+            <div class="grid grid-3">
+                <a href="#" class="card category-card"
+                    onclick="WhatsApp.categoryInquiry('Houses & Flats'); return false;">
+                    <div class="category-icon">🏠</div>
+                    <h3 class="category-title">Houses & Flats</h3>
+                </a>
+                <a href="#" class="card category-card"
+                    onclick="WhatsApp.categoryInquiry('PG & Hostels'); return false;">
+                    <div class="category-icon">🏨</div>
+                    <h3 class="category-title">PG & Hostels</h3>
+                </a>
+                <a href="#" class="card category-card"
+                    onclick="WhatsApp.categoryInquiry('Co-working Spaces'); return false;">
+                    <div class="category-icon">💼</div>
+                    <h3 class="category-title">Co-working</h3>
+                </a>
+                <a href="#" class="card category-card"
+                    onclick="WhatsApp.categoryInquiry('Library & Study Seats'); return false;">
+                    <div class="category-icon">📚</div>
+                    <h3 class="category-title">Library Seats</h3>
+                </a>
+                <a href="#" class="card category-card"
+                    onclick="WhatsApp.categoryInquiry('Commercial Spaces'); return false;">
+                    <div class="category-icon">🏢</div>
+                    <h3 class="category-title">Commercial</h3>
+                </a>
+                <a href="#" class="card category-card"
+                    onclick="WhatsApp.categoryInquiry('Other Rentals'); return false;">
+                    <div class="category-icon">🔑</div>
+                    <h3 class="category-title">Other</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta">
+        <div class="container">
+            <div class="cta-box">
+                <h2 class="cta-title">Can't Find What You Need?</h2>
+                <p class="cta-text">Tell us your requirements and we'll find the perfect match!</p>
+                <a href="#" onclick="WhatsApp.general(); return false;" class="btn btn-whatsapp btn-lg">💬 Chat with
+                    Us</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 RentEase. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="whatsapp-float"><a href="#" onclick="WhatsApp.general(); return false;">💬 Chat</a></div>
+    <script src="../js/app.js"></script>
+</body>
+
+</html>

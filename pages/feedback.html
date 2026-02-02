@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="description" content="Feedback for RentEase">
+    <title>Feedback | RentEase</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="../index.html" class="logo"><span class="logo-icon">🏠</span><span>Rent<span
+                        class="text-gradient">Ease</span></span></a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="explore.html" class="nav-link">Explore</a></li>
+                <li><a href="categories.html" class="nav-link">Categories</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                    </svg>
+                </button>
+                <button class="mobile-menu-btn" aria-label="Menu"><span></span><span></span><span></span></button>
+            </div>
+        </nav>
+    </header>
+
+    <nav class="mobile-nav">
+        <a href="../index.html" class="nav-link">🏠 Home</a>
+        <a href="explore.html" class="nav-link">🔍 Explore</a>
+        <a href="categories.html" class="nav-link">📂 Categories</a>
+        <a href="about.html" class="nav-link">ℹ️ About</a>
+        <a href="contact.html" class="nav-link">📞 Contact</a>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <nav class="breadcrumb"><a href="../index.html">Home</a> / <span>Feedback</span></nav>
+            <h1>Share Your <span class="text-gradient">Feedback</span></h1>
+            <p>Help us improve - Your feedback goes directly to WhatsApp!</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="feedback-form-card">
+                <h3 style="margin-bottom: var(--space-6); text-align: center;">How was your experience?</h3>
+
+                <label class="form-label">⭐ Rate Us (tap stars)</label>
+                <div class="rating-group">
+                    <button type="button" class="rating-btn" data-rating="1">⭐</button>
+                    <button type="button" class="rating-btn" data-rating="2">⭐</button>
+                    <button type="button" class="rating-btn" data-rating="3">⭐</button>
+                    <button type="button" class="rating-btn" data-rating="4">⭐</button>
+                    <button type="button" class="rating-btn" data-rating="5">⭐</button>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">📝 Your Feedback</label>
+                    <textarea class="form-textarea feedback-textarea"
+                        placeholder="Tell us what you liked, what can improve..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">👤 Your Name (Optional)</label>
+                    <input type="text" class="form-input feedback-name" placeholder="Enter your name">
+                </div>
+
+                <button class="btn btn-whatsapp btn-lg feedback-submit" style="width: 100%;">📱 Submit via
+                    WhatsApp</button>
+
+                <p
+                    style="text-align: center; font-size: var(--text-sm); color: var(--text-tertiary); margin-top: var(--space-4);">
+                    Your feedback will be sent to us via WhatsApp</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section cta">
+        <div class="container">
+            <div class="cta-box">
+                <h2 class="cta-title">Need Help?</h2>
+                <p class="cta-text">Contact our support team directly!</p>
+                <a href="#" onclick="WhatsApp.support(); return false;" class="btn btn-whatsapp btn-lg">🆘 Get
+                    Support</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 RentEase. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="whatsapp-float"><a href="#" onclick="WhatsApp.general(); return false;">💬 Chat</a></div>
+    <script src="../js/app.js"></script>
+</body>
+
+</html>

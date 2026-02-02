@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact RentEase via WhatsApp">
+    <title>Contact Us | RentEase</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="../index.html" class="logo"><span class="logo-icon">🏠</span><span>Rent<span
+                        class="text-gradient">Ease</span></span></a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="explore.html" class="nav-link">Explore</a></li>
+                <li><a href="categories.html" class="nav-link">Categories</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                    </svg>
+                </button>
+                <button class="mobile-menu-btn" aria-label="Menu"><span></span><span></span><span></span></button>
+            </div>
+        </nav>
+    </header>
+
+    <nav class="mobile-nav">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="explore.html" class="nav-link">Explore</a>
+        <a href="categories.html" class="nav-link">Categories</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <nav class="breadcrumb"><a href="../index.html">Home</a><span>/</span><span>Contact</span></nav>
+            <h1>Contact <span class="text-gradient">Us</span></h1>
+            <p>We're just a WhatsApp message away!</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">WhatsApp Only</span>
+                <h2 class="section-title">How Can We <span class="text-gradient">Help?</span></h2>
+                <p class="section-desc">Choose the type of support you need and we'll connect you instantly</p>
+            </div>
+
+            <div class="grid grid-3" style="gap: var(--space-6);">
+                <div class="contact-option-card">
+                    <div class="contact-option-icon">🆘</div>
+                    <h3>Support</h3>
+                    <p>Need help with something? We're here to assist.</p>
+                    <button class="btn btn-whatsapp" onclick="WhatsApp.support();">Get Support</button>
+                </div>
+
+                <div class="contact-option-card">
+                    <div class="contact-option-icon">💬</div>
+                    <h3>General Inquiry</h3>
+                    <p>Have questions about our platform or services?</p>
+                    <button class="btn btn-whatsapp" onclick="WhatsApp.general();">Ask Us</button>
+                </div>
+
+                <div class="contact-option-card">
+                    <div class="contact-option-icon">🤝</div>
+                    <h3>Partnership</h3>
+                    <p>Want to list properties or partner with us?</p>
+                    <button class="btn btn-whatsapp" onclick="WhatsApp.partnership();">Partner Up</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">FAQ</span>
+                <h2 class="section-title">Frequently Asked <span class="text-gradient">Questions</span></h2>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">How do I contact property owners?<span
+                            class="faq-icon">▼</span></button>
+                    <div class="faq-answer">
+                        <p>Simply click the "Contact Owner" button on any property page, and you'll be connected via
+                            WhatsApp with a pre-filled message.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Is RentEase free to use?<span class="faq-icon">▼</span></button>
+                    <div class="faq-answer">
+                        <p>Yes! Browsing and contacting owners is completely free for renters.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">How can I list my property?<span class="faq-icon">▼</span></button>
+                    <div class="faq-answer">
+                        <p>Contact us via WhatsApp using the Partnership option above, and our team will help you get
+                            listed.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Are all properties verified?<span class="faq-icon">▼</span></button>
+                    <div class="faq-answer">
+                        <p>We verify listings to the best of our ability. However, we always recommend visiting
+                            properties in person before making any payments.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 RentEase. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="whatsapp-float"><a href="#" onclick="WhatsApp.general(); return false;">💬 Chat</a></div>
+    <script src="../js/app.js"></script>
+</body>
+
+</html>

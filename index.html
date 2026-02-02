@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description"
+        content="RentEase - Find your perfect rental. Houses, PGs, co-working, library seats. Connect via WhatsApp.">
+    <meta name="theme-color" content="#6366f1">
+    <title>RentEase - Find Your Perfect Rental Space</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🏠</span>
+                <span>Rent<span class="text-gradient">Ease</span></span>
+            </a>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="pages/explore.html" class="nav-link">Explore</a></li>
+                <li><a href="pages/categories.html" class="nav-link">Categories</a></li>
+                <li><a href="pages/about.html" class="nav-link">About</a></li>
+                <li><a href="pages/contact.html" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                    </svg>
+                </button>
+                <a href="#" onclick="WhatsApp.general(); return false;" class="btn btn-whatsapp btn-sm">💬 WhatsApp</a>
+                <button class="mobile-menu-btn" aria-label="Menu"><span></span><span></span><span></span></button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav">
+        <a href="index.html" class="nav-link active">🏠 Home</a>
+        <a href="pages/explore.html" class="nav-link">🔍 Explore</a>
+        <a href="pages/categories.html" class="nav-link">📂 Categories</a>
+        <a href="pages/about.html" class="nav-link">ℹ️ About</a>
+        <a href="pages/contact.html" class="nav-link">📞 Contact</a>
+        <a href="pages/feedback.html" class="nav-link">⭐ Feedback</a>
+        <a href="#" onclick="WhatsApp.general(); return false;" class="btn btn-whatsapp" style="margin-top: auto;">💬
+            Chat on WhatsApp</a>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-badge">✨ Find Your Perfect Space Today</span>
+            <h1>Find Your Perfect <span class="text-gradient">Rental Space</span></h1>
+            <p class="hero-text">Houses, PGs, Co-working, Library Seats & More. Connect directly via WhatsApp!</p>
+
+            <div class="hero-buttons">
+                <a href="pages/explore.html" class="btn btn-primary btn-lg">🔍 Explore Rentals</a>
+                <a href="#" onclick="WhatsApp.general(); return false;" class="btn btn-whatsapp btn-lg">💬 Chat with
+                    Us</a>
+            </div>
+
+            <!-- Search -->
+            <div class="search-box">
+                <div class="search-inner">
+                    <div class="search-input-wrapper">
+                        <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                        <input type="text" class="search-input"
+                            placeholder="Enter city or area (e.g., Bangalore, Delhi)">
+                    </div>
+                    <button class="btn btn-primary">Search via WhatsApp</button>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">10K+</div>
+                    <div class="stat-label">Properties</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">5K+</div>
+                    <div class="stat-label">Happy Renters</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Cities</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">4.9★</div>
+                    <div class="stat-label">Rating</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Categories</span>
+                <h2 class="section-title">What Are You <span class="text-gradient">Looking For?</span></h2>
+                <p class="section-desc">Click any category to inquire via WhatsApp</p>
+            </div>
+
+            <div class="grid grid-3">
+                <a href="#" class="card category-card"
+                    onclick="WhatsApp.categoryInquiry('Houses & Flats'); return false;">
+                    <div class="category-icon">🏠</div>
+                    <h3 class="category-title">Houses & Flats</h3>
+                    <p class="category-count">250+ options</p>
+                </a>
+                <a href="#" class="card category-card"
+                    onclick="WhatsApp.categoryInquiry('PG & Hostels'); return false;">
+                    <div class="category-icon">🏨</div>
+                    <h3 class="category-title">PG & Hostels</h3>
+                    <p class="category-count">180+ options</p>
+                </a>
+                <a href="#" class="card category-card"
+                    onclick="WhatsApp.categoryInquiry('Co-working Spaces'); return false;">
+                    <div class="category-icon">💼</div>
+                    <h3 class="category-title">Co-working Spaces</h3>
+                    <p class="category-count">75+ options</p>
+                </a>
+                <a href="#" class="card category-card"
+                    onclick="WhatsApp.categoryInquiry('Library & Study Seats'); return false;">
+                    <div class="category-icon">📚</div>
+                    <h3 class="category-title">Library Seats</h3>
+                    <p class="category-count">120+ options</p>
+                </a>
+                <a href="#" class="card category-card"
+                    onclick="WhatsApp.categoryInquiry('Commercial & Offices'); return false;">
+                    <div class="category-icon">🏢</div>
+                    <h3 class="category-title">Commercial</h3>
+                    <p class="category-count">90+ options</p>
+                </a>
+                <a href="#" class="card category-card"
+                    onclick="WhatsApp.categoryInquiry('Other Rentals'); return false;">
+                    <div class="category-icon">🔑</div>
+                    <h3 class="category-title">Other Rentals</h3>
+                    <p class="category-count">50+ options</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Cities -->
+    <section class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Popular Cities</span>
+                <h2 class="section-title">Search by <span class="text-gradient">City</span></h2>
+                <p class="section-desc">Click any city to find rentals via WhatsApp</p>
+            </div>
+
+            <div class="grid grid-4">
+                <button class="card location-btn" style="padding: var(--space-5); text-align: center;"
+                    data-location="Bangalore">
+                    <div style="font-size: 2rem; margin-bottom: var(--space-2);">🏙️</div>
+                    <h4>Bangalore</h4>
+                </button>
+                <button class="card location-btn" style="padding: var(--space-5); text-align: center;"
+                    data-location="Delhi">
+                    <div style="font-size: 2rem; margin-bottom: var(--space-2);">🏛️</div>
+                    <h4>Delhi</h4>
+                </button>
+                <button class="card location-btn" style="padding: var(--space-5); text-align: center;"
+                    data-location="Mumbai">
+                    <div style="font-size: 2rem; margin-bottom: var(--space-2);">🌆</div>
+                    <h4>Mumbai</h4>
+                </button>
+                <button class="card location-btn" style="padding: var(--space-5); text-align: center;"
+                    data-location="Hyderabad">
+                    <div style="font-size: 2rem; margin-bottom: var(--space-2);">🏰</div>
+                    <h4>Hyderabad</h4>
+                </button>
+                <button class="card location-btn" style="padding: var(--space-5); text-align: center;"
+                    data-location="Pune">
+                    <div style="font-size: 2rem; margin-bottom: var(--space-2);">⛰️</div>
+                    <h4>Pune</h4>
+                </button>
+                <button class="card location-btn" style="padding: var(--space-5); text-align: center;"
+                    data-location="Chennai">
+                    <div style="font-size: 2rem; margin-bottom: var(--space-2);">🏖️</div>
+                    <h4>Chennai</h4>
+                </button>
+                <button class="card location-btn" style="padding: var(--space-5); text-align: center;"
+                    data-location="Kolkata">
+                    <div style="font-size: 2rem; margin-bottom: var(--space-2);">🌉</div>
+                    <h4>Kolkata</h4>
+                </button>
+                <button class="card location-btn" style="padding: var(--space-5); text-align: center;"
+                    data-location="Jaipur">
+                    <div style="font-size: 2rem; margin-bottom: var(--space-2);">🏯</div>
+                    <h4>Jaipur</h4>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Simple Process</span>
+                <h2 class="section-title">How <span class="text-gradient">RentEase</span> Works</h2>
+            </div>
+
+            <div class="grid grid-3">
+                <div class="card feature-card">
+                    <div class="feature-icon">1️⃣</div>
+                    <h4 class="feature-title">Search or Browse</h4>
+                    <p class="feature-text">Enter your city or select a category</p>
+                </div>
+                <div class="card feature-card">
+                    <div class="feature-icon">2️⃣</div>
+                    <h4 class="feature-title">Click to Inquire</h4>
+                    <p class="feature-text">All searches go directly to WhatsApp</p>
+                </div>
+                <div class="card feature-card">
+                    <div class="feature-icon">3️⃣</div>
+                    <h4 class="feature-title">Get Options</h4>
+                    <p class="feature-text">We share matching properties instantly</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta">
+        <div class="container">
+            <div class="cta-box">
+                <h2 class="cta-title">Ready to Find Your Space?</h2>
+                <p class="cta-text">Connect with us on WhatsApp and get personalized recommendations!</p>
+                <div class="cta-buttons">
+                    <a href="#" onclick="WhatsApp.general(); return false;" class="btn btn-whatsapp btn-lg">💬 Start
+                        Chatting</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="logo"><span class="logo-icon">🏠</span><span>Rent<span
+                                class="text-gradient">Ease</span></span></a>
+                    <p>Your trusted WhatsApp-first rental platform.</p>
+                </div>
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="pages/explore.html">Explore</a></li>
+                        <li><a href="pages/categories.html">Categories</a></li>
+                        <li><a href="pages/about.html">About</a></li>
+                        <li><a href="pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" onclick="WhatsApp.general(); return false;">💬 WhatsApp Chat</a></li>
+                        <li><a href="#" onclick="WhatsApp.support(); return false;">🆘 Support</a></li>
+                        <li><a href="pages/feedback.html">⭐ Feedback</a></li>
+                        <li><a href="#" onclick="WhatsApp.partnership(); return false;">🤝 List Property</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 RentEase. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <div class="whatsapp-float">
+        <a href="#" onclick="WhatsApp.general(); return false;">💬 Chat</a>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
