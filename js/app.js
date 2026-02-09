@@ -5,7 +5,7 @@
 
 // ===== Configuration =====
 const CONFIG = {
-    whatsappNumber: '9990997837', // Replace with actual WhatsApp number
+    whatsappNumber: '919990997837', // Replace with actual WhatsApp number
     siteUrl: window.location.origin
 };
 
